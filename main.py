@@ -3505,4 +3505,5 @@ async def nurich_error(ctx, error):
     else:
         print(f"Fehler bei !nurich: {error}")
 
-bot.run("bot token")
+token = os.getenv("DISCORD_TOKEN")
+bot.run(token)
